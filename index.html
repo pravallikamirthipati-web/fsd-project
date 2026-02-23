@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Planner</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Workout Planner</h1>
+        
+        <!-- Workout Input Form -->
+        <form id="workoutForm">
+            <!-- Workout Name (sample options) -->
+            <select id="workoutName" required>
+                <option value="" disabled selected>Select Workout</option>
+                <option value="Push-ups">Push-ups</option>
+                <option value="Squats">Squats</option>
+                <option value="Plank">Plank</option>
+                <option value="Jumping Jacks">Jumping Jacks</option>
+                <option value="Running">Running</option>
+                <option value="Yoga Stretch">Yoga Stretch</option>
+                <option value="Burpees">Burpees</option>
+                <option value="Dumbbell Curls">Dumbbell Curls</option>
+            </select>
+
+            <!-- Workout Duration -->
+            <input type="number" id="workoutDuration" placeholder="Duration (mins)" required>
+
+            <!-- Day selection -->
+            <select id="workoutDay" required>
+                <option value="" disabled selected>Select Day</option>
+                <option value="Sunday">Sunday</option>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+            </select>
+
+            <button type="submit">Add Workout</button>
+        </form>
+
+        <!-- Workout List -->
+        <h2>Your Workouts</h2>
+        <ul id="workoutList"></ul>
+    </div>
+
+    <!-- Link JS -->
+    <script src="script.js"></script>
+</body>
+</html>
