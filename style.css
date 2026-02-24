@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Reset & global */
 * {
     margin: 0;
@@ -130,4 +131,138 @@ background-image: url("image.jpg");
     background-position: center;
     background-repeat: no-repeat;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+=======
+/* Reset & global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container */
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    background: linear-gradient(145deg, #f5f0f0, #e0f7fa);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Centered headings with colors */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #00796b;
+    text-shadow: 1px 1px 2px #004d40;
+    animation: fadeIn 1.2s ease-in;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 35px;
+    animation: slideIn 1s ease-out;
+}
+
+select, input[type="number"] {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #00796b;
+    width: 30%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+select:hover, input[type="number"]:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 121, 107, 0.4);
+}
+
+button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #00796b;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #004d40;
+    transform: scale(1.05);
+}
+
+/* Workout list styling */
+ul {
+    list-style-type: none;
+    animation: fadeIn 1s ease-in;
+}
+
+li {
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: #b2dfdb;
+    border-left: 5px solid #00796b;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+li:hover {
+    transform: scale(1.02);
+    background-color: #80cbc4;
+}
+
+li button {
+    background-color: #d32f2f;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+li button:hover {
+    background-color: #9a0007;
+    transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    0% { opacity: 0; transform: translateX(-50px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+.newWorkout {
+    animation: bounceIn 0.5s ease;
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0.5); opacity: 0; }
+    60% { transform: scale(1.2); opacity: 1; }
+    100% { transform: scale(1); }
+}
+/* Full background on body */
+body {
+background-image: url("image.jpg");
+ background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+>>>>>>> f958bf3e72eb208270860570ae60f381af8123e8
 }
